@@ -46,7 +46,19 @@ export default {
       return (this.tarefas = filtro);
     },
   },
-  watch: {},
+  watch: {
+    tarefas: {
+      deep: true,
+      handler() {
+        localStorage.setItem("tasks", JSON.stringify(this.tarefas));
+        console.log("Salvou");
+      },
+    },
+  },
+  created() {
+    const json = localStorage.getItem("tasks");
+    this.tarefas = JSON.parse(json) || [];
+  },
 };
 </script>
 
