@@ -46,6 +46,7 @@ export default {
       return (this.tarefas = filtro);
     },
   },
+  watch: {},
 };
 </script>
 
