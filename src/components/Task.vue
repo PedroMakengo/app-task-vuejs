@@ -7,6 +7,12 @@
     </form>
 
     <TaskItem :lista="tarefas" :delete="deleteTask" />
+
+    <span v-show="tarefas.length > 0"
+      >Você têm
+      <strong :class="{ pend: pendente }">{{ tarefas.length }}</strong> tarefas
+      pendentes</span
+    >
   </div>
 </template>
 
@@ -22,6 +28,7 @@ export default {
     return {
       tarefa: "",
       tarefas: [],
+      pendente: false,
     };
   },
   methods: {
@@ -51,6 +58,9 @@ export default {
       deep: true,
       handler() {
         localStorage.setItem("tasks", JSON.stringify(this.tarefas));
+        this.tarefas.length > 4
+          ? (this.pendente = true)
+          : (this.pendente = false);
         console.log("Salvou");
       },
     },
@@ -99,5 +109,9 @@ input {
   padding: 6px 10px;
   font-size: 14px;
   outline: none;
+}
+
+.pend {
+  color: #ff0000;
 }
 </style>
