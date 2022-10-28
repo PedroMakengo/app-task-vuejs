@@ -29,6 +29,7 @@ export default {
         alert("Digite uma tarefa...");
         return;
       }
+      this.tarefa = "";
       console.log(this.tarefas);
     },
   },
