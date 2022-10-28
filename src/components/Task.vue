@@ -5,13 +5,19 @@
       <input type="text" v-model="tarefa" placeholder="Tarefa de hoje?" />
       <button type="submit">Adicionar</button>
     </form>
+
+    <TaskItem :lista="tarefas" :delete="deleteTask" />
   </div>
 </template>
 
 <script>
+import TaskItem from "@/components/TaskItem.vue";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Task",
+  components: {
+    TaskItem,
+  },
   data() {
     return {
       tarefa: "",
@@ -31,6 +37,9 @@ export default {
       }
       this.tarefa = "";
       console.log(this.tarefas);
+    },
+    deleteTask() {
+      console.log("Deletou...");
     },
   },
 };

@@ -8,6 +8,7 @@
 
 <script>
 import Task from "@/components/Task.vue";
+
 export default {
   name: "App",
   components: {
