@@ -38,8 +38,12 @@ export default {
       this.tarefa = "";
       console.log(this.tarefas);
     },
-    deleteTask() {
-      console.log("Deletou...");
+    deleteTask(key) {
+      let filtro = this.tarefas.filter(item => {
+        return item.key !== key;
+      });
+
+      return (this.tarefas = filtro);
     },
   },
 };
