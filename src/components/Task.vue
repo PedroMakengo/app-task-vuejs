@@ -1,15 +1,38 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div id="task">
-    <form @submit.prevent="">
-      <input type="text" v-model="task" placeholder="Tarefa de hoje?" />
+    <form @submit.prevent="addTask">
+      <input type="text" v-model="tarefa" placeholder="Tarefa de hoje?" />
       <button type="submit">Adicionar</button>
     </form>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Task",
+  data() {
+    return {
+      tarefa: "",
+      tarefas: [],
+    };
+  },
+  methods: {
+    addTask() {
+      if (this.tarefa !== "") {
+        this.tarefas.push({
+          text: this.tarefa,
+          key: Date.now(),
+        });
+      } else {
+        alert("Digite uma tarefa...");
+        return;
+      }
+      console.log(this.tarefas);
+    },
+  },
+};
 </script>
 
 <style scoped>
