@@ -1,12 +1,16 @@
 <template>
   <div class="app">
-    <h1>Coral</h1>
+    <Logo />
   </div>
 </template>
 
 <script>
+import Logo from "@/components/Logo";
 export default {
   name: "App",
+  components: {
+    Logo,
+  },
 };
 </script>
 

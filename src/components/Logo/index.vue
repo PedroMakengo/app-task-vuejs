@@ -1,13 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <nav id="nav"></nav>
+  <img src="@/assets/img/logo.svg" />
 </template>
 
-<script>
-export default {};
-</script>
-
-<style scoped>
-#logo {
-}
-</style>
+<style scoped></style>
