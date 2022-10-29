@@ -27,5 +27,16 @@ export default {
 
 <style scoped>
 #header {
+  background-color: var(--bg-primary);
+  height: 15vh;
+}
+
+.header-top {
+  border-bottom: 1px solid var(--line);
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-block: 1.5rem;
 }
 </style>

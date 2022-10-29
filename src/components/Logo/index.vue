@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <img src="@/assets/img/logo.svg" />
+  <a href="/">
+    <img src="@/assets/img/logo.svg" />
+  </a>
 </template>
 
 <style scoped></style>

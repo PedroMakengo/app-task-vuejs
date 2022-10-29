@@ -57,5 +57,20 @@ export default {};
 
 <style scoped>
 #user-cart {
+  display: flex;
+  gap: 1rem;
+}
+
+#user-cart a {
+  text-decoration: none;
+
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  gap: 1rem;
+
+  color: #0b0b0b;
+
+  font-weight: 400;
 }
 </style>
