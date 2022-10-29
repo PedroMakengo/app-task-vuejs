@@ -2,7 +2,9 @@
   <div class="app">
     <Header />
     <BackgroundShopNow />
-    <Brand />
+    <main>
+      <Brand />
+    </main>
   </div>
 </template>
 
