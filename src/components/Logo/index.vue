@@ -4,5 +4,3 @@
     <img src="@/assets/img/logo.svg" />
   </a>
 </template>
-
-<style scoped></style>

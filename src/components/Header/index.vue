@@ -16,11 +16,13 @@
 import Search from "@/components/Search";
 import Logo from "@/components/Logo";
 import UserCart from "@/components/UserCart";
+import Nav from "@/components/Nav";
 export default {
   components: {
     Search,
     Logo,
     UserCart,
+    Nav,
   },
 };
 </script>
@@ -28,7 +30,6 @@ export default {
 <style scoped>
 #header {
   background-color: var(--bg-primary);
-  height: 15vh;
 }
 
 .header-top {

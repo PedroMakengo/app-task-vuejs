@@ -10,14 +10,26 @@ body {
   box-sizing: border-box;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Colocando as configurações das minhas cores */
 :root {
   --bg-primary: #f1f1f1;
   --line: #e3e3e3;
+
+  --text-color-link: #0b0b0b;
+  --text-color-link-hover: #0c0b0b;
 }
 
 .container {
-  max-width: 70%;
+  max-width: 85%;
   margin: 0 auto;
 }
 

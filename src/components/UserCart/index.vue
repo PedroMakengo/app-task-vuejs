@@ -62,14 +62,12 @@ export default {};
 }
 
 #user-cart a {
-  text-decoration: none;
-
   display: flex;
   font-size: 0.9rem;
   align-items: center;
-  gap: 1rem;
+  gap: 0.4rem;
 
-  color: #0b0b0b;
+  color: var(--text-color-link);
 
   font-weight: 400;
 }
