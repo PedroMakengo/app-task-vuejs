@@ -1,15 +1,15 @@
 <template>
   <div class="app">
-    <Logo />
+    <Header />
   </div>
 </template>
 
 <script>
-import Logo from "@/components/Logo";
+import Header from "@/components/Header";
 export default {
   name: "App",
   components: {
-    Logo,
+    Header,
   },
 };
 </script>

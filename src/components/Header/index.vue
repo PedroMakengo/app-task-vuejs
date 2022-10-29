@@ -13,7 +13,16 @@
 </template>
 
 <script>
-export default {};
+import Search from "@/components/Search";
+import Logo from "@/components/Logo";
+import UserCart from "@/components/UserCart";
+export default {
+  components: {
+    Search,
+    Logo,
+    UserCart,
+  },
+};
 </script>
 
 <style scoped>
