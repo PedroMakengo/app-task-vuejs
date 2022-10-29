@@ -17,7 +17,8 @@ export default {
 a {
   color: var(--text-color-link);
 
-  font-weight: 400;
+  font-weight: 100;
+  font-size: 0.91rem;
 }
 
 a:hover {
