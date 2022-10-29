@@ -38,6 +38,13 @@
   </section>
 </template>
 
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "BackgroundShopNow",
+};
+</script>
+
 <style scoped>
 #background-shop-now {
   background: var(--bg-primary);

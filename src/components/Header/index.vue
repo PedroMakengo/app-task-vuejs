@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header id="header">
     <div class="container">
@@ -13,11 +14,13 @@
 </template>
 
 <script>
-import Search from "@/components/Search";
-import Logo from "@/components/Logo";
-import UserCart from "@/components/UserCart";
-import Nav from "@/components/Nav";
+import Search from "@/components/Header/Search";
+import Logo from "@/components/Header/Logo";
+import UserCart from "@/components/Header/UserCart";
+import Nav from "@/components/Header/Nav";
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Header",
   components: {
     Search,
     Logo,

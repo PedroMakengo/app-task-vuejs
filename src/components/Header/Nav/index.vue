@@ -8,9 +8,11 @@
 </template>
 
 <script>
-import ItemNavegator from "@/components/ItemNavegator";
+import ItemNavegator from "@/components/Header/ItemNavegator";
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Nav",
   components: { ItemNavegator },
   data() {
     return {
