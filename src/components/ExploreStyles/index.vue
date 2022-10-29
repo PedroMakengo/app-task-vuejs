@@ -1,6 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section id="explore-styles"></section>
+  <section id="explore-styles">
+    <div class="container">
+      <div class="style__principal">
+        <img src="" alt="" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
