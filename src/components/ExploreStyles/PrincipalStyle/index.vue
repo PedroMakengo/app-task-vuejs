@@ -3,6 +3,13 @@
   <div class="style__principal"></div>
 </template>
 
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "PrincipalStyle",
+};
+</script>
+
 <style scoped>
 .style__principal::before {
   content: "Explorer New and Popular Styles";
