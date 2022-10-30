@@ -14,3 +14,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#title-section {
+  text-align: center;
+}
+
+#title-section .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+</style>

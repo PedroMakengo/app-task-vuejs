@@ -19,10 +19,10 @@ export default {
 
   display: block;
   font-weight: 300;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
 
   position: relative;
-  top: 36%;
+  top: 37%;
   left: -55%;
 }
 </style>

@@ -4,7 +4,7 @@
     class="bg-style item__style"
     v-for="(item, index) in dataExplore"
     :key="index"
-    :style="`background: url(${item.urlImage})`"
+    :style="`background-image: url(${item.urlImage})`"
   >
     <div class="ticket">
       <span>{{ item.name }}</span>
@@ -27,7 +27,7 @@ export default {
 .style__secondary .item__style {
   width: 48%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% ;
   cursor: pointer;
 }
 </style>
