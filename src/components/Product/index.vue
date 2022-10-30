@@ -142,6 +142,60 @@
 import TitleSection from "@/components/TitleSection";
 export default {
   name: "NewProduct",
+  data() {
+    return {
+      dataProduct: [
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p1.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p2.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p3.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p4.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p5.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p6.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p7.svg"),
+          price: 65,
+          category: "Dress",
+        },
+        {
+          name: "Adicolor",
+          urlImage: require("../../assets/img/product/p8.svg"),
+          price: 65,
+          category: "Dress",
+        },
+      ],
+    };
+  },
   components: {
     TitleSection,
   },
@@ -197,5 +251,9 @@ export default {
 }
 .content-products .item-product:nth-child(7) .bg-item__product {
   background-image: url("../../assets/img/product/p7.svg");
+}
+.content-products .item-product:nth-child(8) .bg-item__product {
+  background-image: url("../../assets/img/product/p8.svg");
+  background-color: #f1f3f4;
 }
 </style>
