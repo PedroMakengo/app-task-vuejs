@@ -42,6 +42,7 @@ export default {
 
 <style scoped>
 .style__secondary {
+  width: 50%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

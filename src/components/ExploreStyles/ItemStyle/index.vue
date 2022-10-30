@@ -7,8 +7,8 @@
     :style="`background: url(${item.urlImage})`"
   >
     <div class="ticket">
-      <span>Name</span>
-      <span>103 Product</span>
+      <span>{{ item.name }}</span>
+      <span>{{ item.qtProduct }}</span>
     </div>
   </div>
 </template>
@@ -28,5 +28,6 @@ export default {
   width: 48%;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 </style>
