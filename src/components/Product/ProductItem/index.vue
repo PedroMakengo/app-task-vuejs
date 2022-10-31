@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="item-product" v-for="(item, index) in items" :key="index">
+  <article class="item-product" v-for="(item, index) in items" :key="index">
     <div
       class="bg-item__product bg-product"
       :class="(active = item.done === false ? 'm-top' : '')"
@@ -77,11 +77,11 @@
     <div class="content-text">
       <h3>Adicolor Classics joggers</h3>
       <div class="price">
-        <span>Dress</span>
-        <span>$ 63.85</span>
+        <span class="price-slug">Dress</span>
+        <span>$63.85</span>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -98,6 +98,7 @@ export default {
 /* Product */
 .content-products .item-product {
   width: 23.8%;
+  cursor: pointer;
 }
 
 .content-products .bg-product {
@@ -128,15 +129,17 @@ export default {
   background: var(--bg-btn);
   width: 100%;
 
-  position: relative;
-  bottom: 0;
   height: 6vh;
 
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 
   padding-inline: 1rem;
+}
+
+.content-products .bg-product:hover .tickets .content-tickets {
+  display: flex;
 }
 
 /* Btn Comprar */
@@ -172,6 +175,31 @@ export default {
 
 .activeSale {
   background: #1e2832;
+}
+
+/* Information Text */
+.content-text {
+  padding-block: 1rem;
+}
+
+.content-text h3 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content-text .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-text .price .price-slug {
+  color: #777;
+  font-weight: 200;
+}
+
+.content-text .price span {
+  font-weight: 600;
 }
 
 /* Favorite */
