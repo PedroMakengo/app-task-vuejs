@@ -1,16 +1,18 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <article class="item-product" v-for="(item, index) in items" :key="index">
+  <article class="item-product" :class="sliderItem">
     <div
       class="bg-item__product bg-product"
-      :class="(active = item.done === false ? 'm-top' : '')"
-      :style="`background-image: url(${item.urlImage}) `"
+      :class="[(active = product.done == false ? 'm-top' : '')]"
+      :style="`background-image: url(${product.urlImage}) `"
     >
       <span
-        v-show="item.done"
-        :class="(active = item.promo === 'Sale' ? 'activeSale' : 'activeHot')"
+        v-show="product.done"
+        :class="
+          (active = product.promo === 'Sale' ? 'activeSale' : 'activeHot')
+        "
       >
-        {{ item.promo }}
+        {{ product.promo }}
       </span>
       <div class="tickets">
         <div class="content-tickets">
@@ -78,7 +80,7 @@
       <h3>Adicolor Classics joggers</h3>
       <div class="price">
         <span class="price-slug">Dress</span>
-        <span>$63.85</span>
+        <span>{{ product.price }}</span>
       </div>
     </div>
   </article>
@@ -88,9 +90,20 @@
 export default {
   name: "ProductItem",
   props: {
-    items: Array,
+    product: {
+      name: String,
+      done: Boolean,
+      urlImage: Function,
+      promo: String,
+      price: Number,
+      category: String,
+    },
+    sliderItem: String,
   },
   components: {},
+  created() {
+    console.log(this.product);
+  },
 };
 </script>
 

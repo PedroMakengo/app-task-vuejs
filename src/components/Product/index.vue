@@ -5,7 +5,9 @@
       <TitleSection title="New Products" />
 
       <div class="content-products">
-        <ProductItem :items="dataProduct" />
+        <template v-for="(item, index) in items" :key="index">
+          <ProductItem :product="item" />
+        </template>
       </div>
     </div>
   </section>
@@ -18,7 +20,7 @@ export default {
   name: "NewProduct",
   data() {
     return {
-      dataProduct: [
+      items: [
         {
           name: "Adicolor",
           urlImage: require("../../assets/img/product/p1.svg"),
@@ -85,6 +87,10 @@ export default {
         },
       ],
     };
+  },
+
+  created() {
+    console.log(this.items);
   },
   components: {
     TitleSection,
