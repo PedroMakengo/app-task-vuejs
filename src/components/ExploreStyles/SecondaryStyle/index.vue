@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="style__secondary">
-    <ItemStyle :dataExplore="exploreData" />
+    <ItemStyle :items="itemsProduct" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   components: { ItemStyle },
   data() {
     return {
-      exploreData: [
+      itemsProduct: [
         {
           name: "Item 1",
           qtProduct: 103,

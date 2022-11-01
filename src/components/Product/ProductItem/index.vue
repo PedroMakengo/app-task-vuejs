@@ -96,12 +96,12 @@ export default {
 
 <style scoped>
 /* Product */
-.content-products .item-product {
+.item-product {
   width: 23.8%;
   cursor: pointer;
 }
 
-.content-products .bg-product {
+.bg-product {
   background-color: #ebecec;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,7 +112,7 @@ export default {
 }
 
 /* Tickets */
-.content-products .bg-product .tickets {
+.bg-product .tickets {
   display: flex;
 
   justify-content: center;
@@ -125,7 +125,7 @@ export default {
   height: 100% !important;
 }
 
-.content-products .bg-product .tickets .content-tickets {
+.bg-product .tickets .content-tickets {
   background: var(--bg-btn);
   width: 100%;
 
@@ -138,12 +138,12 @@ export default {
   padding-inline: 1rem;
 }
 
-.content-products .bg-product:hover .tickets .content-tickets {
+.bg-product:hover .tickets .content-tickets {
   display: flex;
 }
 
 /* Btn Comprar */
-.content-products .bg-product .tickets .content-tickets button {
+.bg-product .tickets .content-tickets button {
   color: white;
 
   display: flex;
@@ -151,12 +151,12 @@ export default {
   gap: 0.6rem;
 }
 
-.content-products .bg-product .tickets .content-tickets button svg {
+.bg-product .tickets .content-tickets button svg {
   width: 18px;
   height: 18px;
 }
 
-.content-products .bg-product span {
+.bg-product span {
   display: flex;
 
   align-items: center;

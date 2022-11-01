@@ -2,7 +2,7 @@
 <template>
   <div
     class="bg-style item__style"
-    v-for="(item, index) in dataExplore"
+    v-for="(item, index) in items"
     :key="index"
     :style="`background-image: url(${item.urlImage})`"
   >
@@ -18,7 +18,7 @@ export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "ItemStyleSecondary",
   props: {
-    dataExplore: [],
+    items: Array,
   },
 };
 </script>
@@ -27,7 +27,7 @@ export default {
 .style__secondary .item__style {
   width: 48%;
   background-repeat: no-repeat;
-  background-size: 100% ;
+  background-size: 100%;
   cursor: pointer;
 }
 </style>
