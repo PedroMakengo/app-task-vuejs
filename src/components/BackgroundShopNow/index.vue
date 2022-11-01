@@ -9,7 +9,7 @@
           here.
         </p>
 
-        <a href="#">
+        <a href="/">
           <svg
             width="24"
             height="24"
@@ -99,11 +99,15 @@ export default {
   justify-content: center;
   gap: 0.5rem;
 
-  width: 30%;
+  width: 35%;
   height: 3rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   color: #fff;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 999;
 }
 
 #background-shop-now .container img {

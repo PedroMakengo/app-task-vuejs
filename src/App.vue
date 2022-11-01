@@ -7,6 +7,7 @@
       <ExploreStyles />
       <NewProduct />
       <ZaraPromo />
+      <BestSellers />
     </main>
   </div>
 </template>
@@ -18,6 +19,8 @@ import Brand from "@/components/Brand";
 import ExploreStyles from "@/components/ExploreStyles";
 import NewProduct from "@/components/Product";
 import ZaraPromo from "@/components/ZaraPromo";
+import BestSellers from "@/components/BestSellers";
+
 export default {
   name: "App",
   components: {
@@ -27,6 +30,7 @@ export default {
     ExploreStyles,
     NewProduct,
     ZaraPromo,
+    BestSellers,
   },
 };
 </script>
