@@ -1,12 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section id="brand">
+  <section id="follow-product">
     <div class="container">
-      <ul>
-        <li v-for="(item, index) in brand" :key="index">
-          <img :src="item.image" alt="" />
-        </li>
-      </ul>
+      <TitleSection />
     </div>
   </section>
 </template>
+
+<script>
+export default {};
+</script>
+
+<style scoped></style>
