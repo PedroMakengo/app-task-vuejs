@@ -123,7 +123,7 @@ export default {
 
 <style scoped>
 #footer {
-  height: 50vh;
+  height: 55vh;
 
   display: flex;
   flex-direction: column;
