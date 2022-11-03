@@ -6,9 +6,3 @@
     </div>
   </section>
 </template>
-
-<style scoped>
-#footer {
-  padding-block: 4rem;
-}
-</style>

@@ -10,6 +10,7 @@
       <BestSellers />
       <FollowProduct />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import NewProduct from "@/components/Product";
 import ZaraPromo from "@/components/ZaraPromo";
 import BestSellers from "@/components/BestSellers";
 import FollowProduct from "@/components/FollowProduct";
+import Footer from "@/components/Footer";
 
 export default {
   name: "App",
@@ -34,6 +36,7 @@ export default {
     ZaraPromo,
     BestSellers,
     FollowProduct,
+    Footer,
   },
 };
 </script>
