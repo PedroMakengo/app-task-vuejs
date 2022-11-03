@@ -66,5 +66,20 @@
   align-items: center;
   justify-content: space-between;
   padding-block: 0.5rem;
+
+  color: white;
+}
+
+#copyright .container a {
+  color: white;
+}
+
+.copy-date p {
+  font-weight: 600;
+}
+
+.scroll-top a {
+  display: flex;
+  align-items: center;
 }
 </style>
