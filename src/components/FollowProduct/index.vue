@@ -9,6 +9,8 @@
           <PhotoItem :item="item" />
         </template>
       </div>
+
+      <Newsletter />
     </div>
   </section>
 </template>
@@ -16,6 +18,7 @@
 <script>
 import TitleSection from "@/components/TitleSection";
 import PhotoItem from "@/components/FollowProduct/PhotoItem";
+import Newsletter from "@/components/FollowProduct/Newsletter";
 export default {
   data() {
     return {
@@ -50,6 +53,7 @@ export default {
   components: {
     TitleSection,
     PhotoItem,
+    Newsletter,
   },
 };
 </script>
@@ -63,6 +67,6 @@ export default {
 .content-follow-product {
   display: flex;
   gap: 1rem;
-  margin-top: 4rem;
+  margin-block: 4rem;
 }
 </style>
