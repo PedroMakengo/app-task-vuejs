@@ -22,7 +22,27 @@ export default {
       items: [
         {
           to: "/",
-          urlImage: require("../../"),
+          urlImage: require("../../assets/img/photo/photo-1.svg"),
+        },
+        {
+          to: "/",
+          urlImage: require("../../assets/img/photo/photo-2.svg"),
+        },
+        {
+          to: "/",
+          urlImage: require("../../assets/img/photo/photo-3.svg"),
+        },
+        {
+          to: "/",
+          urlImage: require("../../assets/img/photo/photo-4.svg"),
+        },
+        {
+          to: "/",
+          urlImage: require("../../assets/img/photo/photo-5.svg"),
+        },
+        {
+          to: "/",
+          urlImage: require("../../assets/img/photo/photo-6.svg"),
         },
       ],
     };

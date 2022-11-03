@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="item__photo">
+  <div class="item__photo" :style="`background-image: url(${item.urlImage})`">
     <a href="/">
       <svg
         width="42"
@@ -31,9 +31,9 @@ export default {
 
 <style scoped>
 .item__photo {
-  background: red;
+  background-size: cover;
   width: 200px;
-  height: 180px;
+  height: 150px;
 
   display: flex;
   align-items: center;
@@ -45,8 +45,12 @@ export default {
   width: 100%;
   height: 100%;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+.item__photo:hover a {
+  display: flex;
 }
 </style>
