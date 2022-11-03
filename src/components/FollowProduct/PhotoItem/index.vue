@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="item__photo" :style="`background-image: url(${item.urlImage})`">
-    <a href="/">
+    <a :href="item.to">
       <svg
         width="42"
         height="42"
