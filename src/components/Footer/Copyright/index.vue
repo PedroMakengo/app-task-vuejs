@@ -56,3 +56,15 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+#copyright {
+  background: #1e2832;
+}
+#copyright .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+}
+</style>
